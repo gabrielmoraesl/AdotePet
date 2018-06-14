@@ -8,13 +8,13 @@
 <div class="content-wrapper">
 	<!-- Content Header (Page header) -->
 	<section class="content-header">
-		<h1>
-			Usuários <small>Cadastro de Usuários</small>
-		</h1>
-		<ol class="breadcrumb">
-			<li><a href="#"><i class="fa fa-dashboard"></i> Administração</a></li>
-			<li class="active">Usuários</li>
-		</ol>
+	<h1>
+		Usuários <small>Cadastro de Usuários</small>
+	</h1>
+	<ol class="breadcrumb">
+		<li><a href="#"><i class="fa fa-dashboard"></i> Administração</a></li>
+		<li class="active">Usuários</li>
+	</ol>
 	</section>
 	<!-- Main content -->
 	<section class="content">
@@ -41,11 +41,12 @@
 						<tbody>
 							<c:forEach items="${users}" var="user">
 								<tr>
-									<td><a href='<spring:url value="/users/${user.id}.html"></spring:url>'>${user.name}</a></td>
+									<td><a
+										href='<spring:url value="/users/${user.id}.html"></spring:url>'>${user.name}</a></td>
 									<td>${user.email}</td>
 									<td></td>
 									<td><fmt:formatDate type="date" dateStyle="short"
-											timeStyle="short" value="${user.anoInclusao}" /></td>
+											timeStyle="short" value="${user.dtInclusao}" /></td>
 									<td>${user.profissao }
 									<td><c:forEach items="${user.roles}" var="role"
 											varStatus="i">

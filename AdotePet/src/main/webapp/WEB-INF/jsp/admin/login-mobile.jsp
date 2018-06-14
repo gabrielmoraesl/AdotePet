@@ -78,19 +78,20 @@
 
 					<!-- /.col -->
 				</div>
-				
+
 				<input type="hidden" name="isMobile" id="isMobile"
-						class="form-control">
-				
+					class="form-control">
+
 			</form>
-	
-	
+
+
 			<c:if test="${appName != 'JSI - Real Jurídica' }">
-   				<a
-				href='<spring:url value="/user-password-recovery.html"></spring:url>'
-				class="text-center">Novo Usuário</a> <br>
+				<a
+					href='<spring:url value="/user-password-recovery.html"></spring:url>'
+					class="text-center">Novo Usuário</a>
+				<br>
 			</c:if>
-			
+
 
 			<a
 				href='<spring:url value="/user-password-recovery.html"></spring:url>'

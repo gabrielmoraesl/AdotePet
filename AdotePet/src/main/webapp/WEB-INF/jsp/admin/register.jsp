@@ -70,17 +70,18 @@ select {
 						<div class="box-body">
 							<div class="form-group col-xs-6">
 								<label for="name">Nome Completo</label> <input type="text"
-									class="form-control" name="name" id="name"
-									placeholder="" required>
+									class="form-control" name="name" id="name" placeholder=""
+									required>
 							</div>
 							<div class="form-group col-xs-3">
 								<label for="name">Cpf</label> <input type="text"
-									class="form-control" name="cpf" id="cpf"
-									placeholder="" required>
+									class="form-control" name="cpf" id="cpf" placeholder=""
+									required>
 							</div>
 							<div class="form-group col-xs-6">
-								<label for="email">E-mail <small> (este e-mail será usado para recuperar sua senha em caso de perdas)</small></label> <input type="text"
-									class="form-control" name="email" id="email"
+								<label for="email">E-mail <small> (este e-mail
+										será usado para recuperar sua senha em caso de perdas)</small></label> <input
+									type="text" class="form-control" name="email" id="email"
 									placeholder="e-mail@e-mail.com " required>
 							</div>
 							<div class="form-group col-xs-3">
@@ -89,9 +90,9 @@ select {
 									placeholder="Senha " required>
 							</div>
 							<div class="form-group col-xs-3">
-								<label for="password">Repita sua Senha</label> <input type="password"
-									class="form-control" name="password2" id="password2"
-									placeholder="Repita sua Senha " required>
+								<label for="password">Repita sua Senha</label> <input
+									type="password" class="form-control" name="password2"
+									id="password2" placeholder="Repita sua Senha " required>
 							</div>
 							<div class="form-group col-xs-6">
 								<label for="password">Função</label> <input type="text"

@@ -20,7 +20,7 @@
 	<div class="login-box">
 		<div class="login-logo">
 
-			<a href="#"><b>${appName}</b> - Sys</a>
+			<a href="#"><b>${appName}</b></a>
 		</div>
 		<!-- /.login-logo -->
 		<c:if test="${param.passwordIgual eq false}">
@@ -58,8 +58,8 @@
 			<form action="/login" method="POST">
 				<div class="form-group has-feedback">
 					<input type="text" name="username" id="username"
-						class="form-control" placeholder="Email"
-						required="true" autocomplete="off"> <span
+						class="form-control" placeholder="Email" required="true"
+						autocomplete="off"> <span
 						class="glyphicon glyphicon-envelope form-control-feedback"></span>
 				</div>
 				<div class="form-group has-feedback">
@@ -79,21 +79,6 @@
 					<!-- /.col -->
 				</div>
 			</form>
-	
-	
-			<c:if test="${appName != 'JSI - Real Jurídica' }">
-   				<a
-				href='<spring:url value="/user-password-recovery.html"></spring:url>'
-				class="text-center">Novo Usuário</a> <br>
-			</c:if>
-			
-
-			<a
-				href='<spring:url value="/user-password-recovery.html"></spring:url>'
-				class="text-center">Esqueci minha senha</a> <br>
-			<%-- <a
-				href='<spring:url value="register.html"></spring:url>'
-				class="text-center">Ainda não tenho uma conta</a> --%>
 
 		</div>
 		<!-- /.login-box-body -->

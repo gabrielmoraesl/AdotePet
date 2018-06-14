@@ -79,16 +79,6 @@ select {
 									placeholder="E-mail " required>
 							</div>
 							<div class="form-group col-xs-6">
-								<label>Centro de custo</label> <select class="form-control"
-									id="centroDeCusto" name="idCentroDeCusto">
-									<!-- centro de custo contabil -->
-									<c:forEach items="${centrosDeCusto}" var="centroDeCusto">
-										<option value="${centroDeCusto.id}"><c:out
-												value="${centroDeCusto.nome}"></c:out>
-									</c:forEach>
-								</select>
-							</div>
-							<div class="form-group col-xs-6">
 								<label for="password">Senha</label> <input type="password"
 									class="form-control" name="password" id="password"
 									placeholder="Senha " required>

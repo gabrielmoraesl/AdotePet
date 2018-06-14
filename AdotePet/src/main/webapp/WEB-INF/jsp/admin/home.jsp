@@ -15,42 +15,32 @@
 		<h2 class="page-header">
 			<a href="#introduction">Introdução</a>
 		</h2>
-		<p class="lead">
-			${appIntro}
-		</p>
-		
+		<p class="lead">${appIntro}</p>
+
 		<h2 class="page-header">
 			<a href="#introduction">${appIntroTitle1}</a>
 		</h2>
-		<p class="lead">
-			${appIntroDesc1}
-		</p>
+		<p class="lead">${appIntroDesc1}</p>
 		</section>
-		
+
 		<h2 class="page-header">
 			<a href="#introduction">${appIntroTitle2}</a>
 		</h2>
-		<p class="lead">
-			${appIntroDesc2}
-		</p>
+		<p class="lead">${appIntroDesc2}</p>
 		</section>
-		
+
 		<h2 class="page-header">
 			<a href="#introduction">${appIntroTitle3}</a>
 		</h2>
-		<p class="lead">
-			${appIntroDesc3}
-		</p>
+		<p class="lead">${appIntroDesc3}</p>
 		</section>
-		
+
 		<h2 class="page-header">
 			<a href="#introduction">${appIntroTitle4}</a>
 		</h2>
-		<p class="lead">
-			${appIntroDesc4}
-		</p>
+		<p class="lead">${appIntroDesc4}</p>
 		</section>
-		
+
 	</div>
 </div>
 <!-- /.content-wrapper -->
