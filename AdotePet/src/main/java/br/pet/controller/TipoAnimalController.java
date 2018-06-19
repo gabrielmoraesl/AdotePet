@@ -30,6 +30,7 @@ public class TipoAnimalController {
 	public String showRegister(Model model, Principal principal) {
 		if (principal == null)
 			return "redirect:/login.html?authenticate=false";
+
 		model.addAttribute("tipoAnimal", new TipoAnimal());
 
 		return "tipo-animal-register";
@@ -39,6 +40,7 @@ public class TipoAnimalController {
 	public String doRegister(Model model, Principal principal, @ModelAttribute("tipoAnimal") TipoAnimal tipoAnimal) {
 		if (principal == null)
 			return "redirect:/login.html?authenticate=false";
+
 		tipoAnimalService.save(tipoAnimal);
 
 		return "redirect:/tipos-animais.html";

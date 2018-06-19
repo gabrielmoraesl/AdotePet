@@ -31,9 +31,15 @@
 						modelAttribute="tipoAnimal">
 						<div class="col-xs-12">
 							<div class="form-group col-xs-7 col-sm-6 col-lg-8">
-								<label>Tipo:</label> <br>
-								<form:input class="form-group col-xs-12" path="tipo" type="text"
-									id="tipo" name="tipo" required="required" />
+								<label>Especie:</label> <br>
+								<form:input class="form-group col-xs-12" path="especie"
+									type="text" id="especie" name="especie" required="required" />
+							</div>
+
+							<div class="form-group col-xs-7 col-sm-6 col-lg-8">
+								<label>Raça:</label> <br>
+								<form:input class="form-group col-xs-12" path="raca" type="text"
+									id="raca" name="raca" required="required" />
 							</div>
 
 							<div class="form-group col-xs-7 col-sm-6 col-lg-8">

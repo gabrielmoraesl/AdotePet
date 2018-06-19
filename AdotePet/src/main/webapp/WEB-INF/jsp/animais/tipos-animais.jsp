@@ -26,21 +26,18 @@
 							<thead>
 								<tr>
 									<th>ID</th>
-									<th>Tipo</th>
+									<th>Especie</th>
+									<th>Raça</th>
 									<th>Descrição</th>
-									<th></th>
 								</tr>
 							</thead>
 							<tbody>
 								<c:forEach items="${tiposAnimais}" var="tipoAnimal">
 									<tr>
 										<td>${tipoAnimal.id}</td>
-										<td>${tipoAnimal.tipo }</td>
+										<td>${tipoAnimal.especie }</td>
+										<td>${tipoAnimal.raca }</td>
 										<td>${tipoAnimal.descricao }</td>
-										<td><a
-											href='<spring:url value="/tipo-animal-detail/${projeto.id}.html"></spring:url>'
-											title="Gerenciar Tipo de Animal, visualizar detalhes.."><span
-												class="glyphicon glyphicon-list"></span></a></td>
 									</tr>
 								</c:forEach>
 							</tbody>
