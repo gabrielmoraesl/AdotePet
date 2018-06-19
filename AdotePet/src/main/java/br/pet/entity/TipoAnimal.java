@@ -11,8 +11,11 @@ public class TipoAnimal {
 	@GeneratedValue
 	private Integer id;
 
-	@Column(name = "tx_tipo")
-	private String tipo;
+	@Column(name = "tx_especie")
+	private String especie;
+
+	@Column(name = "tx_raca")
+	private String raca;
 
 	@Column(name = "tx_descricao")
 	private String descricao;
@@ -25,12 +28,20 @@ public class TipoAnimal {
 		this.id = id;
 	}
 
-	public String getTipo() {
-		return tipo;
+	public String getEspecie() {
+		return especie;
 	}
 
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
+	public void setEspecie(String especie) {
+		this.especie = especie;
+	}
+
+	public String getRaca() {
+		return raca;
+	}
+
+	public void setRaca(String raca) {
+		this.raca = raca;
 	}
 
 	public String getDescricao() {
