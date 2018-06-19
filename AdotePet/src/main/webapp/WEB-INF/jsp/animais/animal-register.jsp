@@ -31,9 +31,42 @@
 						modelAttribute="animal">
 						<div class="col-xs-12">
 							<div class="form-group col-xs-7 col-sm-6 col-lg-8">
-								<label>Nome:</label> <br>
+								<label>Nome do pet:</label> <br>
 								<form:input class="form-group col-xs-12" path="nome" type="text"
 									id="nome" name="nome" required="required" />
+							</div>
+
+							<div class="form-group col-xs-7 col-sm-6 col-lg-8">
+								<label>Cor do pet:</label> <br>
+								<form:input class="form-group col-xs-12" path="cor" type="text"
+									id="cor" name="cor" required="required" />
+							</div>
+
+							<div class="form-group col-xs-7 col-sm-6 col-lg-8">
+								<label>Data de nascimento:</label> <br>
+								<form:input class="form-group col-xs-12" path="dtNascimento"
+									type="date" id="dtNascimento" name="dtNascimento"
+									required="required" />
+							</div>
+							<div class="form-group col-xs-7 col-sm-6 col-lg-8">
+								<label>Cartão de vacina:</label> <br>
+								<form:radiobutton class="form-group col-xs-12"
+									path="carteiraVacinacao" id="carteiraVacinacao"
+									name="carteiraVacinacao" value="true" />
+								Sim
+								<form:radiobutton class="form-group col-xs-12"
+									path="carteiraVacinacao" id="carteiraVacinacao"
+									name="carteiraVacinacao" value="false" checked="true" />
+								Não
+							</div>
+							<div class="form-group col-xs-7 col-sm-6 col-lg-8">
+								<label>Sexo do pet:</label> <br>
+								<form:radiobutton class="form-group col-xs-12" path="sexo"
+									id="sexo" name="sexo" value="macho" />
+								Macho
+								<form:radiobutton class="form-group col-xs-12" path="sexo"
+									id="sexo" name="sexo" value="femea" checked="true" />
+								Femea
 							</div>
 
 							<div class="form-group col-xs-7 col-sm-6 col-lg-8">
@@ -46,7 +79,7 @@
 								<label>Tipos:</label> <br> <select
 									class="form-control select2" id="idTipo" name="idTipo" required>
 									<c:forEach items="${tiposAnimais }" var="tiposAnimal">
-										<option value="${tiposAnimal.id }">${tiposAnimal.tipo }</option>
+										<option value="${tiposAnimal.id }">${tiposAnimal.especie }</option>
 									</c:forEach>
 								</select>
 							</div>

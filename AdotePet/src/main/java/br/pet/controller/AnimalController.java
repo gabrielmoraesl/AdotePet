@@ -1,6 +1,8 @@
 package br.pet.controller;
 
 import java.security.Principal;
+import java.sql.Date;
+import java.util.Calendar;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -45,7 +47,10 @@ public class AnimalController {
 			@RequestParam Integer idTipo) {
 		if (principal == null)
 			return "redirect:/login.html?authenticate=false";
+
 		animal.setTipoAnimal(tipoAnimalService.findOne(idTipo));
+		animal.setDtCadastro(new Date(Calendar.getInstance().getTimeInMillis()));
+
 		animalService.save(animal);
 
 		return "redirect:/animais.html";

@@ -25,8 +25,8 @@ public class Animal {
 	@Column(name = "dt_nascimento")
 	private Date dtNascimento;
 
-	@Column(name = "tx_carteira_vacinacao")
-	private String carteiraVacinacao;
+	@Column(name = "bl_carteira_vacinacao")
+	private Boolean carteiraVacinacao;
 
 	@Column(name = "tx_sexo")
 	private String sexo;
@@ -75,11 +75,11 @@ public class Animal {
 		this.dtNascimento = dtNascimento;
 	}
 
-	public String getCarteiraVacinacao() {
+	public Boolean getCarteiraVacinacao() {
 		return carteiraVacinacao;
 	}
 
-	public void setCarteiraVacinacao(String carteiraVacinacao) {
+	public void setCarteiraVacinacao(Boolean carteiraVacinacao) {
 		this.carteiraVacinacao = carteiraVacinacao;
 	}
 

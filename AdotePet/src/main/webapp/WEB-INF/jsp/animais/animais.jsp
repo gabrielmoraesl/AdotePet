@@ -38,7 +38,7 @@
 										<td>${animal.id}</td>
 										<td>${animal.nome }</td>
 										<td>${animal.descricao }</td>
-										<td>${animal.tipoAnimal.tipo }</td>
+										<td>${animal.tipoAnimal.especie }</td>
 										<!-- 										<td><a -->
 										<%-- 											href='<spring:url value="/animal-detail/${projeto.id}.html"></spring:url>' --%>
 										<!-- 											title="Gerenciar Animal, visualizar detalhes.."><span -->
